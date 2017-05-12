@@ -1,0 +1,25 @@
+
+
+
+drop table 9xb_data;
+create table 9xb_data (
+id           int           not null  auto_increment,
+first_name   varchar(50),
+last_name    varchar(50),
+email        varchar(50),
+job_role     varchar(50),
+primary key (id)
+);
+
+
+delete from 9xb_data;
+insert into 9xb_data (first_name,last_name,email,job_role) values('Jo','Strummer','mail+j+strummer@9xb.com','Developer');
+insert into 9xb_data (first_name,last_name,email,job_role) values('Mick','Jones','mail+m+jones@9xb.com','Project Manager');
+insert into 9xb_data (first_name,last_name,email,job_role) values('Pauline','Black','mail+p+black@9xb.com','Developer');
+insert into 9xb_data (first_name,last_name,email,job_role) values('Topper','Headon','mail+t+headon@9xb.com','Developer');
+
+
+explain 9xb_data;
+select * from 9xb_data;
+
+
